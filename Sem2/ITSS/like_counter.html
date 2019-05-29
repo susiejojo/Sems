@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<button id="b" onclick="function()">Like!</button>
+</body>
+<script>
+var Storage = {
+    set: function(key, value) {
+        localStorage[key] = JSON.stringify(value);
+    },
+    get: function(key) {
+        return localStorage[key] ? JSON.parse(localStorage[key]) : null;
+    }
+};
+$(function() {
+    var defaultValue = {param1: 'value',counter: 0 },
+        myObj = Storage.get('myObj') || defaultValue; 
+    $('body').html('counter: ' + myObj.counter);
+    myObj.counter+=1; 
+    Storage.set('myObj', myObj); 
+});
+</script>

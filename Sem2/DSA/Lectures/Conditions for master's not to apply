@@ -1,0 +1,12 @@
+Conditions for master's not to apply
+1. a>=1, b>1
+2. f(n) not decreasing
+3. shouldn't be -f(n)
+4. should be comparable in degree to polynomials
+ e.g: not (cos x), (n/logn)
+ NOTE:
+ ''
+ if f(n)=n^(logbbase a)log^k n
+ then O(n^(logbbase a)log^(k+1) n)
+ 5. applies for 2^n
+ 

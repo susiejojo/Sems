@@ -1,0 +1,11 @@
+Potential quiz questions:
+1. Why isfull() checks if size=n-1 in queue?
+2. if Postfix->Prefix possible?
+3. a^b^c how to convert to postfix
+4. WHy postfix in place of infix?
+5. Utility of prefix
+6. Pre&Postorder->TREE
+7. Max depth of binary tree
+8. What is min heap used for?
+9. Balanced parenthesis
+10. Median finding

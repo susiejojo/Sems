@@ -1,0 +1,16 @@
+Summary of Facts About Joint PMFs:
+
+Let X and Y be random variables associated with the same experiment.
+• The joint PMF of X and Y is defined by
+pX,Y (x, y) = P(X = x, Y = y).
+• The marginal PMFs of X and Y can be obtained from the joint PMF,
+using the formulas
+pX(x) = summation(over y)pX,Y (x, y), pY (y) = summation(over x)pX,Y (x, y).
+x & y are independent random variables if::
+P(X=x,Y=y)=P(X=x).P(Y=y)
+• A function g(X, Y ) of X and Y defines another random variable, and
+E g(X, Y ) = 
+x,y
+g(x, y)pX,Y (x, y).
+If g is linear, of the form aX + bY + c, we have
+E[aX + bY + c] = aE[X] + bE[Y ] + c.

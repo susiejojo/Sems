@@ -1,0 +1,33 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>TEST</title>
+</head>
+<body>
+<button id="button1">Reset</button>
+<button id="button2"> Click to fade out image</button>
+<p id="p1">tdjtsms</p>
+<p id="p2">mdmkdkdk</p>
+<p id="p3">ydkutdmdd</p>
+<p id="p4"><img src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg"></p>
+</body>
+<script>
+$(document).ready(function(){
+	$("#button2").click(function(){
+		$("#p4").hide();
+	});
+	$("#p1").click(function(){
+		$(this).hide();
+	});
+	$("#p2").click(function(){
+		$(this).css("font-weight","bold");
+	});
+	$("#button1").click(function()
+	{
+		$("#p4").show();
+		$("#p1").show();
+		$("#p2").css("font-weight","normal");
+	});
+});
+</script>
+

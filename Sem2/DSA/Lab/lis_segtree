@@ -1,0 +1,4 @@
+lis with segment tree:
+entries <= current a[i] stored in segment tree: to deal with a[j]<a[i]
+arr[i]=max(0,ix-1)+1 :deals with j<i
+update into seg tree=arr[ix]

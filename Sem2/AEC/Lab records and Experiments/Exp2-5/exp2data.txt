@@ -1,0 +1,2 @@
+RVoltage across R1: 0.11 V
+Voltage across R2: 10.88 V

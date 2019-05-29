@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{fancyvrb}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\usepackage[normalem]{ulem}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+\parindent0in
+\pagestyle{plain}
+\thispagestyle{plain}
+
+
+%% UPDATE MACRO DEFINITIONS %%
+\newcommand{\assignment}{Lecture \#1}
+\newcommand{\duedate}{Date: 31st December 2018}
+\newcommand{\statement}{
+Introduction to Sets and Functions
+}
+
+\begin{document}
+
+\textbf{Linear Algebra (MA3.101)}\hfill\textbf{\assignment}\\[0.01in]
+\textbf{Instructor: Dr.\ Prasad Krishnan}\hfill\textbf{\duedate}\\
+\smallskip\hrule\bigskip
+
+\begin{center}
+    \LARGE
+    \textbf{Introduction to Linear Algebra}
+    \bigskip
+\end{center}
+
+\section{What is Linear Algebra?}
+Linear Algebra is an essential to most people concerned with engineering. Regardless of your major, a thorough understanding of the subject will assist in problem solving. One interesting thing to note about this course is the fact that the journey is as important if not more important than the final takeaways of the course. After all, Linear Algebra is a course which build from the ground up. Hence, be sure to pay attention to the course from the start as things will just build on another as we progress.
+
+%%% Start writing and defining sections and subsections here
+
+\section{Sets}
+\textbf{Set:} A \underline{well defined} collection of \underline{ distinct} elements.
+\\\\Eg: Set of natural numbers: {1, 2, 3...}
+\\\\However, this cannot be considered well defined, since we cannot list every element ike this.
+\\\\Another way to define natural numbers is: 
+\\$ \bigcup {a_o} \cup {a_i}$
+\\where: $a_o=1, a_i=a_{i-1}+1$
+\\\\(We assume addition is defined.)
+\\\\Eg of not well-defined 'set': Set of emotions
+\\\\Eg of set with non-distinct elements: \{0,0\}
+
+\section{Functions}
+\textbf{Function:} f:   \sout{X} $\rightarrow$ \sout{Y}
+\\A mapping from \sout{x} to \sout{y}, which associates each x $\in$ \sout{X} to a single y $\in$ \sout{Y}. It is denoted as $f(x)$.
+
+\subsection{Linear Functions}
+A function which satisfies the following condition:
+\\Given that $x_1 \rightarrow f(x_1)$
+\\And $x_1 \rightarrow f(x_1)$
+\\\\Then if input given to the function is $c_1x_1 + c_2x_2$,
+\\Then output $f(c_1x_1 + c_2x_2)$ must be equal to $c_1f(x_1) + c_2f(x_2)$, for any $x_1, x_2 \in$ \sout{X}.
+\\\\If $f(x)= ax+b$,
+\\$f(x_1)=ax_1+b$
+\\$f(x_2)=ax_2+b$
+\\$f(c_1x_1 + c_2x_2=c_1f(x_1) + c_2f(x_2) + b \neq c_1f(x_1) + c_2f(x_2)$ unless b = 0.
+\\Hence $f(x) = ax$ is a linear function.
+\\Here $f$ can be defined on $\R \rightarrow \R$, $\C \rightarrow \C$ or $\R \rightarrow \C$.
+\\\\Given an unknown function, $x_1$, $f(x_1)$, $x_2$ and $f(x_2)$, we cand etermine $f(x)$ at any $x= c_1x_1+c_2x_2$
+\\\\Since $f(x)=ax$,
+\\to solve for $a$, only 1 equation is required.
+\\$f(1)=a(1)$
+\\$\Rightarrow f(1)=a$
+\\\\We can hence describe the function using only one parameter, and given an unknown linear function, we do not need to evaluate it at every point on the range.
+
+\begin{thebibliography}{1}
+\bibitem{1}
+Linear Algebra  by  Kenneth Hoffman and Ray Kunze, 2nd edition, Prentice Hall of India Private Limited, 2006.
+
+\end{thebibliography}
+
+\end{document}  

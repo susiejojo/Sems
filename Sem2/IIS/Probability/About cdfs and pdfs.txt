@@ -1,0 +1,11 @@
+FOR CONTINUOUS RANDOM VARIABLES:
+cdf:
+P(X<=x)=integration(p(x))over x from -infinity to x
+pdf:
+the function p(x) mentioned above.
+p(x)=d/dx(P(X))
+IMP:
+joint pmf of any two r.vs:
+product of marginal pmfs and conditional pmfs
+CONDITIONAL PMFS:
+p(x/y)=p(x,y)/p(y)
